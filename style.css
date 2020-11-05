@@ -1,0 +1,61 @@
+/* ======= Font import ======= */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* ======= Variables ======= */
+:root {
+    --ff-primary: 'Anton', sans-serif;
+}
+/* ======= Global styles ======= */
+*,
+::after,
+::before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--ff-primary);
+    background: #3E7CB1;
+    color: #25283D;
+    font-size: 14px;
+}
+ul {
+    list-style-type: none;
+}
+h1, h2, h3, h4 {
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    font-family: var(--ff-primary);
+}
+h1 {
+    font-size: 48px;
+}
+/* ======= Counter ======= */
+main {
+    display: grid;
+    place-items: center;
+}
+.container {
+    text-align: center;
+}
+#value {
+    font-size: 96px;
+    font-weight: bold;
+}
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    padding: 6px 12px;
+    letter-spacing: 1.6px;
+    /* display: inline-block; */
+    font-size: 14px;
+    border: 2px solid #25283D;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 8px;
+}
+.btn:hover {
+    color: #FFF;
+    background: #25283D;
+}
